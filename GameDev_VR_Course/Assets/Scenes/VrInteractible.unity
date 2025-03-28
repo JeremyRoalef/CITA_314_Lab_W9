@@ -8601,8 +8601,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446f949c065295849bb94dd2ca81794b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  columns: 2
+  rows: 4
   wallCubePrefab: {fileID: 116418561456166111, guid: 07db4e4b7317ae94b92d16eb095b1fad, type: 3}
   socketWallCubePrefab: {fileID: 1850427963284166456, guid: 9be95218f55f16b4b820cc82a0fec990, type: 3}
+  socketWallPosition: 1
   wallSocket: {fileID: 0}
   wallCubes: []
   cubeSpacing: 0
