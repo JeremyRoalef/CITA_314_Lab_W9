@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 [ExecuteAlways]
 public class TheWall : MonoBehaviour
 {
+    public UnityEvent OnDestroy;
+
     [SerializeField]
     int columns;
 
@@ -91,6 +94,8 @@ public class TheWall : MonoBehaviour
                 generatedColumn[i].DestroyColumn(power);
             }
         }
+
+        OnDestroy?.Invoke();
     }
 
     private void WallSocket_OnSelectExited(SelectExitEventArgs arg0)
